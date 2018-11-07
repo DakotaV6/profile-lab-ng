@@ -5,8 +5,8 @@ const editProfile = {
     controller: ["ProfileService", function(ProfileService) {
         const vm = this;
         vm.person = ProfileService.getUserProfile();
-        vm.passData = (person) => {
-            ProfileService.setUserProfile(person);
+        vm.passData = (updatedPerson) => {
+            ProfileService.setUserProfile(updatedPerson);
         }
     }]
 };
