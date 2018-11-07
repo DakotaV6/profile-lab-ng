@@ -1,0 +1,14 @@
+<form class="profile-card shadow edit-form" ng-submit="$ctrl.passData($ctrl.person);">
+    <p class="edit-txt">Use the form below to update your profile:</p>
+
+    <label for="profile-name" class="input-label">Name</label>
+    <input type="text" class="profile-input" name="profile-name" ng-model="$ctrl.person.name">
+
+    <label for="profile-email" class="input-label">Contact</label>
+    <input type="email" class="profile-input" name="profile-email" ng-model="$ctrl.person.email">
+
+    <label for="profile-desc" class="input-label">Bio</label>
+    <textarea type="text" class="profile-input bio-input" name="profile-desc" ng-model="$ctrl.person.bio"></textarea>  
+
+    <button class="edit-btn update-btn">Update</button>
+</form>

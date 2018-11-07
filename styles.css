@@ -1,0 +1,100 @@
+/*****************/
+/**** GENERAL ****/
+/*****************/
+/* Border-box fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/************************/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #eee;
+    margin: 0;
+}
+.shadow {
+    Box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
+}
+
+/****************/
+/* Profile Card */
+/****************/
+
+.profile-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 420px;
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+}
+.profile-img {
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.profile-info {
+    height: 45%;
+    width: 100%;
+    padding: 15px;
+    padding-top: 25px;
+}
+.profile-name {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.profile-email {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(190,190,190);
+}
+.profile-desc {
+    font-size: 14px;
+}
+.edit-btn {
+    cursor: pointer;
+    background-color: #505355;
+    color: #eee;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.edit-btn:hover {
+    background-color: #5BECD8;
+}
+/****************/
+/* Edit Profile */
+/****************/
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.edit-txt {
+    font-size: 16px;
+}
+.input-label {
+    color: #1ECEFD;
+}
+.profile-input {
+    border: 1px solid #505355;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 13px 0;
+}
+.bio-input {
+    height: 80px;
+}
+.update-btn {
+    margin-top: 15px;
+}
