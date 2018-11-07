@@ -3,17 +3,20 @@
 function ProfileService($location) {
     const self = this;
     self.person = {
-        name: "Grant Chirpus",
-        email: "grant@grandcircus.co",
-        bio: "I'm pretty cool. I do a great job. I like Tetris. I'm pretty ok at AngularJS."
+        name: "Jack Kanga",
+        email: "kangaroo@jack.co",
+        bio: "I'm pretty cool. Lover of licorice. Hate hot candy. Looking for an easy payday."
     };
-    self.setUserProfile = (person) => {
-        self.person = person;
+    self.setUserProfile = (updatedPerson) => {
+        self.person = updatedPerson;
         $location.path("/user-profile");
     };
     self.getUserProfile = () => {
         return self.person;
     };
+    self.loadEdit = () => {
+        $location.path("/edit-profile");
+    }
 }
 
 angular

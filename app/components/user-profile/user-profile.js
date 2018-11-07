@@ -4,7 +4,10 @@ const userProfile = {
     templateUrl: "app/components/user-profile/user-profile.html",
     controller: ["ProfileService", function(ProfileService) {
         const vm = this;
-        vm.info = ProfileService.getUserProfile();
+        vm.person = ProfileService.getUserProfile();
+        vm.loadEdit = () => {
+            ProfileService.loadEdit();
+        }
     }]
 };
 
